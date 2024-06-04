@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reported PC Issues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Reported PC Issues</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>PC Number</th>
+            <th>Issue Type</th>
+            <th>Issue Description</th>
+            <th>Student Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="issue : ${issues}">
+            <td th:text="${issue.pcNumber}">PC Number</td>
+            <td th:text="${issue.issueType}">Issue Type</td>
+            <td th:text="${issue.description}">Issue Description</td>
+            <td th:text="${issue.student}">Student Name</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

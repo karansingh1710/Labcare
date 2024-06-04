@@ -1,0 +1,425 @@
+@font-face {
+    font-family: heading;
+    src: url(../Rejouice-Headline.ttf);
+}
+@font-face {
+    font-family: heading1;
+    src: url(../NBInternationalProBoo.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    color: #04080f;
+    background: #d9dbf1;
+    font-family: heading;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+main{
+    position: relative;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.landing-page{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transition: all .75s;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    /* border: 2px solid black; */
+}
+.heading{
+    padding-bottom: 5vw;
+}
+h1::selection,button::selection{
+    display: none;
+}
+::selection{
+    background: #04080f;
+    color: #d9dbf1;
+}
+.heading h1{
+    width: fit-content;
+    font-size: 9vw;
+    line-height: 4.5vw;
+}
+.heading h2,#about h1,#about h2{
+    color: transparent;
+    -webkit-text-stroke: 1px #04080f;
+    font-size: 3vw;
+}
+.landing-page p{
+    width: 85%;
+    font-size: 1.5vw;
+    padding-bottom: 3.5vw;
+    font-family: heading1;
+}
+.register{
+    padding: .4vw 5vw;
+    font-size: 1.75vw;
+    font-family: heading;
+    background: #04080f;
+    color: #d9dbf1;
+    mix-blend-mode: difference;
+    border: none;
+    outline: none;
+    transition: all .5s;
+    letter-spacing: .75px;
+}
+.register:hover{
+    scale: 1.001;
+    background: #d9dbf1b3;
+    color: #04080f;
+    box-shadow: 2px 2px 5px #d9dbf1,
+                inset 1px 1px 5px #04080f;
+}
+p{
+    font-family: heading1;
+}
+
+
+
+.login-page{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+    transition: all .75s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.contianer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.main-login{
+    transform: translateY(0%);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.main-signUp{
+    transform: translateY(-100%);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.main-signUp button{
+    margin-top: 1vw;
+    padding: .5vw 0;
+    font-size: 1.25vw;
+}
+.main-forgetPassword{
+    transform: translateY(-100%);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.main-forgetPassword button{
+    padding: .5vw 0;
+    font-size: 1.25vw;
+    margin-top: 1vw;
+}
+.log,.landing-page{
+    cursor: default;
+}
+.log{
+    width: 60%;
+    height: 60%;
+    background: linear-gradient(to left top, #bfcc74,#d9dbf1 90%);
+    display: flex;
+    overflow: hidden;
+    z-index: 999;
+}
+.image{
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 0;
+    transition: all .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.image img:hover{
+    scale: 1.1;
+}
+
+.log-details{
+    width: calc(100% - 35%);
+    height: 100%;
+    padding: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-details-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.log-details-container h1{
+    font-size: 2.5vw;
+    letter-spacing:.5px;
+}
+.log-details h6{
+    font-size: 1.25vw;
+    letter-spacing: 1px;
+    opacity: .9;
+    font-weight: 400;
+    margin-bottom: 6vh;
+    color: #04080f;
+}
+input{
+    border: none;
+    outline-color: #04080f;
+}
+input::placeholder{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #8e9dcc;
+}
+#email,#password,#course,#roll,#name{
+    font-size: 1.05vw;
+    font-weight: 500;
+    padding: .5vh;
+    font-family: gilroy;
+    margin-bottom: 2vh;
+}
+#password{
+    margin-bottom: 2.5vh;
+}
+.rem{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: fit-content;
+}
+.chk  label{
+    font-size: 1.2vw;
+}
+form button{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+button{
+    padding: .75vh;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background: #04080f;
+    color: white;
+    transition: all .25s;
+}
+a:hover{
+    color: #0d0221;
+    text-decoration: none;
+}
+button:hover{
+    background: #bfcc74 ;
+    color: #04080f;
+    box-shadow: 0 2.5px 5px black;
+}
+input:active ::placeholder{
+    display: none;
+}
+.first{
+    top: 15%;
+    left: 15%;
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    transform: skewX(25deg) rotate(-10deg) translateX(-100%);
+    background: linear-gradient(to top,#04080f,#d9dbf1, #bfcc74);
+    z-index: 1;
+    animation: animate 1s ease-in-out infinite alternate ;
+}
+
+.second{
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    bottom: 10%;
+    transform: skewX(25deg) rotate(-10deg) translateX(100%);
+    background: linear-gradient(to top, #bfcc74,#d9dbf1,#04080f);
+    z-index: 1;
+    animation: animate 1s ease-in-out infinite alternate-reverse ;
+}
+@keyframes animate {
+    0% {
+    transform: skewX(25deg) rotate(-10deg) translateX(-120%);
+    }
+    100% {
+    transform: skewX(25deg) rotate(-10deg) translateX(120%);
+    }
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+    position: relative;
+    padding: 2vw 3vw;
+    cursor: default;
+}
+#about .top-header{
+    width: 100%;
+    height: 50%;
+}
+#about h1{
+    position: relative;
+}
+#about h1::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+#about h1:hover::before{
+    display: none;
+}
+#about h1::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#about h1:hover::after{
+    width: 100%;
+}
+#about p{
+    font-size: 1.5vw;
+    width: 85%;
+    margin-top: 2vw;
+    line-height: 1.9vw;
+}
+#about .cards-content{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+#about .content1,.content2,.content3{
+    overflow: hidden;
+    border: none;
+    outline: none;
+    box-shadow: -2px -2px 5px #04080f,
+                inset -2px -2px 5px #d9dbf1;
+}
+.content1{
+    background-image: url(../images/img.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.content2{
+    background-image: url(../images/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.content3{
+    background-image: url(../img.avif);
+    background-position: 80% 10%;
+    background-size: cover;
+}
+
+#about .cards-content .content1,.content2,.content3{
+    width: 30%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.content1 .text{
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(80%);
+}
+.content2 .text{
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(78%);
+}
+.content3 .text{
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translateY(83.5%);
+}
+.content1:hover .text,.content2:hover .text,.content3:hover .text{
+    transform: translateY(0%);
+}
+#about .cards-content h2{
+    font-size: 2vw;
+    padding-bottom: 1vw;
+}
+#about h2{
+    color: transparent;
+    -webkit-text-stroke: .5px #04080f;
+}
+#about .cards-content p{
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    opacity: .8;
+    margin: 0;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left top, #bfcc74,#d9dbf1);
+    padding: 1vw 2vw;
+    border-radius: 10px;
+}
+
+/* Admin login button css*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container .admin-login {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.footer-container .admin-login:hover {
+    background-color: #45a049;
+}
+
+
+

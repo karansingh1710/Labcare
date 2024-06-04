@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - LabCare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: right;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer span {
+            margin-right: 20px;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Welcome to LabCare</h1>
+</div>
+<div class="container">
+    <div class="welcome-message">
+        <h2>Hello, <span th:text="${user}">Student</span>!</h2>
+        <p>Welcome to LabCare. Use the buttons below to register any PC issues you encounter or to view blogs.</p>
+    </div>
+<!--    Click here to open the reporting page of system-->
+    <a href="/report-issue" class="button">Register an Issue</a>
+<!--    Click here to open the blog page that will be introduced in future-->
+    <a href="/blogs" class="button">View Blogs</a>
+</div>
+<div class="footer">
+    <span>Logged in as: <span th:text="${user}">Student</span></span>
+</div>
+</body>
+</html>

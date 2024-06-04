@@ -1,0 +1,729 @@
+@media (max-width:940px) {
+    .heading h1{
+        font-size: 9vw;
+    }
+    .heading h2,#about h1,#about h2{
+        font-size: 3.5vw;
+    }
+    .landing-page p{
+        width: 85%;
+        font-size: 1.75vw;
+    }
+    .register{
+        padding: .4vw 5vw;
+        font-size: 1.75vw;
+    }
+    .first{
+        height: 7.5vh;
+    }
+    .second{
+        height: 7.5vh;
+    }
+
+    #about p{
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+    #about .cards-content h2{
+        font-size: 2vw;
+    }
+    #about h2{
+        -webkit-text-stroke: .25px #04080f;
+    }
+    #about .cards-content p{
+        font-size: 1.25vw;
+        line-height: 1.5vw;
+    }
+    .text{
+        padding: 2vw;
+    }
+}
+
+@media (max-width:840px) {
+    .register{
+        padding: .6vw 4vw;
+        font-size: 2vw;
+    }
+
+    .main-signUp button{
+        margin-top: 1vw;
+        padding: 1vw 0;
+    }
+    .main-signUp #emial,.main-signUp #password{
+        padding: .5vw;
+    }
+    .main-forgetPassword button{
+        padding: 1vw 0;
+        margin-top: 1vw;
+    }
+    .main-forgetPassword h1{
+        font-size: 3vw;
+    }
+    .log{
+        width: 60%;
+        height: 55%;
+    }
+
+    .log-details-container{
+        width: 100%;
+        height: 100%;
+    }
+    .log-details h1{
+        font-size: 3vw;
+    }
+    .log-details h6{
+        font-size: 1.5vw;
+        letter-spacing: .25px;
+        margin-bottom: 2vw;
+    }
+    #email,#password{
+        font-size: 1.5vw;
+        padding: .5vw;
+        margin-bottom: 2vw;
+    }
+    input::placeholder{
+        font-size: 1.3vw;
+    }
+
+    button{
+        padding: 1.1vh;
+        font-size: 1.5vw;
+    }
+    .first{
+        height: 7.5vh;
+    }
+    .second{
+        height: 7.5vh;
+    }
+
+    #about p{
+        font-size: 1.75vw;
+        line-height: 2vw;
+        width: 90%;
+    }
+    #about h2{
+        padding-bottom: 4vw;
+        -webkit-text-stroke: .2px #04080f;
+    }
+    #about .cards-content h2 {
+        font-size: 2vw;
+    }
+    #about .cards-content p{
+        font-size: 1.5vw;
+    }
+    .text{
+        padding: 1.5vw;
+    }
+}
+
+@media (max-width:768px) {
+    .landing-page{
+        padding: 0 4vw;
+    }
+    .heading h1{
+        width: fit-content;
+        font-size: 10vw;
+    }
+    .heading h2,#about h1,#about h2{
+        font-size: 4vw;
+    }
+    .landing-page p{
+        font-size: 2vw;
+        line-height: 2.25vw;
+    }
+    .register{
+        padding: .6vw 5vw;
+        font-size: 2.25vw;
+    }
+    .main-signUp button{
+        padding: .75vw;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+    }
+    .main-signUp h1{
+        font-size: 3vw;
+    }
+    .main-signUp #password {
+        padding: 0.75vw;
+    }
+    .main-forgetPassword button{
+        padding: .9vw 0;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+    }
+    .main-forgetPassword .log-details-container h1{
+        font-size: 3vw;
+    }
+    .log,.landing-page{
+        cursor: default;
+    }
+    .log{
+        width: 60%;
+        height: 60%;
+    }
+    .image{
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .log-details{
+        width: 80%;
+        height: 100%;
+        padding: 4vw;
+    }
+    .log-details-container h1{
+        font-size: 3.25vw;
+        letter-spacing:.5px;
+    }
+    .log-details h6{
+        font-size: 1.5vw;
+        padding-bottom: 1vw;
+    }
+    #email,#password{
+        padding: 0.75vw;
+    }
+    #password{
+        margin-bottom: 1.25vw;
+        padding: .9vw;
+    }
+    button{
+        padding: .9vw;
+        font-size: 1.5vw;
+    }
+    #about p{
+        font-size: 1.75vw;
+        width: 90%;
+        line-height: 2vw;
+    }
+    
+    #about .cards-content h2{
+        font-size: 2.5vw;
+        padding-bottom: 1.5vw;
+    }
+    #about h2{
+        color: transparent;
+        -webkit-text-stroke: .2px #04080f;
+    }
+    #about .cards-content p{
+        font-size: 1.75vw;
+        line-height: 2vw;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left top, #bfcc74,#d9dbf1);
+        padding: 1vw 2.25vw;
+        border-radius: 10px;
+    }
+    
+}
+
+@media (max-width:640px) {
+    .landing-page{
+        padding: 0 5vw;
+    }
+    .landing-page h1{
+        font-size: 10vw;
+        margin-top: .5vw;
+    }
+    .heading h2,#about h1,#about h2{
+        -webkit-text-stroke: 1px #04080f;
+        font-size: 4vw;
+    }
+    .landing-page p{
+        width: 85%;
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    .register{
+        padding: 1vw 5vw;
+        font-size: 2vw;
+    }
+
+    .main-signUp button{
+        padding: .75vw;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+    }
+    .main-signUp h1{
+        font-size: 3vw;
+    }
+    .main-signUp #password {
+        padding: 0.75vw;
+    }
+    .main-forgetPassword button{
+        padding: .9vw 0;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+    }
+    .main-forgetPassword .log-details-container h1{
+        font-size: 3vw;
+    }
+    
+
+    .log{
+        width: 50%;
+        height: fit-content;
+    background: linear-gradient(to left top, #bfcc74,#d9dbf1 70%);
+    }
+    .image{
+        width:0;
+        height: 0;
+    }
+    .log-details{
+        width: 100%;
+        height: 100%;
+        padding: 5vw;
+    }
+    .log-details-container h1{
+        font-size: 4vw;
+        letter-spacing:.5px;
+    }
+    .log-details h6{
+        font-size: 1.9vw;
+        margin-bottom: 5vw;
+    }
+    input::placeholder{
+        font-size: 1.5vw;
+    }
+    button{
+        padding: 1vw;
+        font-size: 1.75vw;
+    }
+    
+    #about{
+        padding: 2vw 5vw;
+    } 
+    #about p{
+        font-size: 2vw;
+        width: 95%;
+        line-height:2.75vw;
+    }
+    #about .cards-content h2{
+        font-size: 2vw;
+        padding-bottom: 2vw;
+    }
+    #about h2{
+        -webkit-text-stroke: .25px #04080f;
+    }
+    #about .cards-content p{
+        font-size: 1.75vw;
+        line-height: 2vw;
+    }   
+}
+
+@media (max-width:560px) {
+    .landing-page{
+        padding: 0 5vw;
+    }
+    .heading{
+        padding-bottom: 10vw;
+    }
+    .landing-page .heading h1{
+        font-size: 12vw;
+        line-height: 7vw;
+    }
+    .heading h2,#about h1,#about h2{
+        color: transparent;
+        -webkit-text-stroke: 1px #04080f;
+        font-size: 6vw;
+    }
+    .landing-page p{
+        width: 95%;
+        font-size: 2.5vw;
+        line-height: 3.25vw;
+        padding-bottom: 10vw;
+    }
+    .register{
+        padding: 1.5vw 5vw;
+        font-size: 2.5vw;
+    }
+
+    .login-page{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: all .75s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .contianer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .main-login{
+        transform: translateY(0%);
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .main-signUp{
+        transform: translateY(-100%);
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .main-signUp button{
+        margin-top: 5vw;
+        padding: 1vw;
+        font-size: 4vw;
+    }
+    .main-signUp .log-details-container h1{
+        font-size: 6vw;
+    }
+    .main-signUp #password{
+        padding: 1vw;
+    }
+    .main-forgetPassword button{
+        padding: 1vw;
+        font-size: 4vw;
+        margin-top: 5vw;
+    }
+    .main-forgetPassword  .log-details-container h1{
+        font-size: 5vw;
+    }
+    .log{
+        width: 70%;
+        height: fit-content;
+    }
+    .image{
+        width: 0;
+        height: 0;
+    }
+    
+    .log-details{
+        width: 100%;
+        height: 100%;
+        padding: 5vw 2vw;
+    }
+    .log-details-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .log-details-container h1{
+        font-size: 6vw;
+    }
+    .log-details h6{
+        font-size: 3vw;
+        font-weight: 400;
+        margin-bottom: 5vh;
+    }
+    #email,#password{
+        font-size: 4vw;
+        padding: 1vw;
+        margin-bottom: 4vh;
+    }
+    #password{
+        margin-bottom: 2vh;
+    }
+    input::placeholder{
+        font-size: 3vw;
+    }
+    button{
+        padding: 1vw;
+        font-size: 4vw;
+    }
+    
+    .first{
+        top: 20%;
+        width: 40vw;
+        height: 5vh;
+    }
+    .second{
+        width: 40vw;
+        height: 5vh;
+        bottom: 20%;
+    }
+    
+    #about{
+        width: 100%;
+        min-height: 100vh;
+        padding: 5vw 3vw;
+    }
+    #about .top-header{
+        width: 100%;
+        height: fit-content;
+    }
+    #about p{
+        font-size: 3vw;
+        width: 95%;
+        margin-top: 5vw;
+        line-height:3.5vw;
+    }
+    #about .cards-content{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 12.5vw;
+    }
+    
+    #about .cards-content .content1,.content2,.content3{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10vw;
+    }
+    .content1 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(75%);
+    }
+    .content2 .text{
+        transition: all 1s cubic-bezier(5.19, 1, 0.22, 1);
+        transform: translateY(75%);
+    }
+    .content3 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(73%);
+    }
+    #about .cards-content h2{
+        font-size: 6vw;
+        padding-bottom: 1vw;
+    }
+    #about h2{
+        -webkit-text-stroke: 1px #04080f;
+    }
+    #about .cards-content p{
+        font-size: 3.5vw;
+        line-height: 5vw;
+        opacity: .8;
+        margin: 0;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left top, #bfcc74,#d9dbf1 70%);
+        padding: 4vw;
+    }
+    .content3{
+        height: 250px;
+    }
+}
+
+@media (max-width:490px) {
+    .content1 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(80%);
+    }
+    .content2 .text{
+        transition: all 1s cubic-bezier(5.19, 1, 0.22, 1);
+        transform: translateY(80%);
+    }
+    .content3 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(80%);
+    }
+    .first{
+        top: 20%;
+        width: 50vw;
+        height: 4.5vh;
+    }
+    .second{
+        width: 50vw;
+        height: 4.5vh;
+        bottom: 20%;
+    }
+}
+
+@media (max-width:320px) {
+    .landing-page{
+        padding: 0 5vw;
+    }
+    .heading{
+        padding-bottom: 10vw;
+    }
+    .landing-page .heading h1{
+        font-size: 12vw;
+        line-height: 7vw;
+    }
+    .heading h2,#about h1,#about h2{
+        color: transparent;
+        -webkit-text-stroke: 1px #04080f;
+        font-size: 7.5vw;
+    }
+    .landing-page p{
+        width: 95%;
+        font-size: 4vw;
+        line-height: 4.25vw;
+        padding-bottom: 10vw;
+    }
+    .register{
+        padding: 2vw 7vw;
+        font-size: 4vw;
+    }
+    
+    
+    
+    .login-page{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        transform: translateY(-100%);
+        transition: all .75s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .contianer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .main-login{
+        transform: translateY(0%);
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .main-signUp{
+        transform: translateY(-100%);
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    .main-signUp button{
+        margin-top: 12vw;
+        padding: 1vh;
+        font-size: 5vw;
+    }
+    .main-signUp .log-details-container h1{
+        font-size: 7.5vw;
+    }
+    .main-signUp #password{
+        padding: 2vw;
+    }
+    .main-forgetPassword button{
+        padding: 2vw;
+        font-size: 5vw;
+        margin-top: 10vw;
+    }
+    .main-forgetPassword  .log-details-container h1{
+        font-size: 6.75vw;
+    }
+    .log{
+        width: 85%;
+        height: 60%;
+    }
+    .image{
+        width: 0;
+        height: 0;
+    }
+    
+    .log-details{
+        width: 100%;
+        height: 100%;
+        padding: 5vw 2vw;
+    }
+    .log-details-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .log-details-container h1{
+        font-size: 8vw;
+    }
+    .log-details h6{
+        font-size: 3.5vw;
+        font-weight: 400;
+        margin-bottom: 7.5vh;
+    }
+    #email,#password{
+        font-size: 5vw;
+        padding: 1vh;
+        margin-bottom: 4vh;
+    }
+    #password{
+        margin-bottom: 2vh;
+    }
+    input::placeholder{
+        font-size: 4.5vw;
+    }
+    button{
+        padding: 1vh;
+        font-size: 5vw;
+    }
+    .first{
+        top: 20%;
+        width: 40vw;
+        height: 3.5vh;
+    }
+    .second{
+        width: 40vw;
+        height: 3.5vh;
+        bottom: 20%;
+    }
+    
+    #about{
+        width: 100%;
+        min-height: 100vh;
+        padding: 5vw 3vw;
+    }
+    #about .top-header{
+        width: 100%;
+        height: fit-content;
+    }
+    #about p{
+        font-size: 3.5vw;
+        width: 95%;
+        margin-top: 5vw;
+        line-height:4.25vw;
+    }
+    #about .cards-content{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 12.5vw;
+    }
+    
+    #about .cards-content .content1,.content2,.content3{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10vw;
+    }
+    .content1 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(80%);
+    }
+    .content2 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(80%);
+    }
+    .content3 .text{
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(82%);
+    }
+    #about .cards-content h2{
+        font-size: 6vw;
+        padding-bottom: 1vw;
+    }
+    #about h2{
+        -webkit-text-stroke: 1px #04080f;
+    }
+    #about .cards-content p{
+        font-size: 4vw;
+        line-height: 5vw;
+        opacity: .8;
+        margin: 0;
+    }
+    .text{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to left top, #bfcc74,#d9dbf1 72%);
+        padding: 5vw;
+    }
+    .content3{
+        height: 220px;
+    }
+}

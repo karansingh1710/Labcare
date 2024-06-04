@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard_style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <h1>Admin Dashboard</h1>
+        <button class="logout-button">Logout</button>
+    </div>
+</header>
+<main>
+    <div class="dashboard-container">
+        <div class="option-card" onclick="location.href='/view_students'">
+            <h2>View Students</h2>
+            <p>View and manage all registered students.</p>
+        </div>
+        <div class="option-card" onclick="location.href='/view-lab-status'">
+            <h2>View Lab Status</h2>
+            <p>Monitor and manage the status of all lab computers.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <main id="main">
+
+        <div class="login-page">
+            <div class="contianer main-login">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="log">
+                    <div class="image"><img src="./img.avif" alt="img"></div>
+                    <div class="log-details">
+                        <div class="log-details-container">
+                            <form action="/login" method="post">
+                                <h1>Login your account</h1>
+                                <h6>Don't have an account? <a class="sign1" href="#">Sign up Here!</a></h6>
+                                <input type="email" name="email" id="email" placeholder="Email :" required autocomplete="off"><br>
+                                <input type="password" name="password" id="password" placeholder="Password :" required autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
+                                <div class="rem">
+                                    <h6><a class="forpass1" href="#">Forgot Password?</a></h6>
+                                </div>
+                                <button id="loginBtn" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contianer main-signUp">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="log">
+                    <div class="image"><img src="./img.avif" alt="img"></div>
+                    <div class="log-details">
+                        <div class="log-details-container">
+                            <form action="/registerStudent" method="post">
+                                <h1>SignUp your account</h1>
+                                <h6>Have an account? <a class="log1" href="#">Login Here!</a></h6>
+                                <input type="text" name="name" id="name" placeholder="Name:" autocomplete="off" required>
+                                <input class="signupemail" type="email" name="email" id="email" placeholder="Email :" required autocomplete="off">
+
+                                <input type="text" name="roll" id="roll" placeholder="Roll:" autocomplete="off" required>
+
+                                <input type="text" name="course" id="course" placeholder="Course:" autocomplete="off" required>
+
+                                <input class="password" type="password" name="password" id="password" placeholder="Password:" required autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                                <!-- <input class="new-pass" type="text" name="Conform Password" id="password" placeholder="Conform Password :" required autocomplete="off"> -->
+                                <button id="signupBtn">SignUp</button>
+                            </form>
+                    </div>
+                        </div>
+                </div>
+            </div>
+            <div class="contianer main-forgetPassword">
+                <div class="first"></div>
+                <div class="second"></div>
+                <div class="log">
+                    <div class="image"><img src="./img.avif" alt="img"></div>
+                    <div class="log-details">
+                        <div class="log-details-container">
+                            <form action="">
+                                <h1>Forget your password?</h1>
+                                <h6>Don't have an account? <a class="mainsignup" href="#">Sign up Here!</a></h6>
+                                <input class="otp" type="number" name="OTP" id="email" placeholder="Enter your OTP :" required autocomplete="off">
+                                <input class="re-password" type="text" name="password" id="password" placeholder="New Password :" required autocomplete="off" >
+                                <input  class="conform-re-password" type="text" name="password" id="password" placeholder="Verify Password :" required autocomplete="off" >
+                                <button id="Save-passwordBtn">Save password</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="landing-page">
+            <div class="landing-content">
+                <div class="heading">
+                    <h2><span>We work</span></h2>
+                    <h1><span>your lab issues.</span></h1>
+                </div>
+                <p>LabCare provide efficient computer support service tailored for busy computer labs. Our expert technicians liks CSE & CS faculty resolve hardware and software issues to minimize downtime, ensuring uninterrupted productivity. With customizable service, LabCare offers a tailored solution to meet the unique nedds of each lab envoirment.</p>
+                <button class="register">Register!</button>
+            </div>
+        </div>
+        <section id="about">
+            <div class="top-header">
+                <h1>About labcare</h1>
+            <p>LabCare specializes in resolving hardware and software issues in laboratory envoirments, ensuring seamless  operation and maximum effisiency. Labcare is a one-step paltform designed to help student and educaters overcome comman lab -related challesnges. We understand the frustration that can arise when encountering thecnical defficulties during lab experiment or project. Our user-friendly platform connects student with a supportive community of learners and exprienced professional.</p>
+            </div>
+            <div class="cards-content">
+                <div class="content1">
+                    <div class="text">
+                        <h2>Our Mission</h2>
+                        <p>LabCare is dedicated to providing comprehensive solution for all hardware and software issues encountered in laboratory setting. Our mission is to ensure smooth operation and and maximum efficiency in laboratories os all sizes.</p>
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="text">
+                        <h2>What We Offer</h2>
+                        <p>LabCare offers a wide range of services including hardware troubleshooting, software configuration, system maintenance, and technical support. Our team member and faculties are here to help. </p>
+                    </div>
+                </div>
+                <div class="content3">
+                    <div class="text">
+                        <h2>Our Team</h2>
+                        <p>As a member of our labcare project, I excel in troubleshooting and resolving both hardware and software issues for collage student. My collaborative nature and effective communication skiils enable me to work efficiently with my team to provied reliable support to students, ensuring their acadminc success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <button class="admin-login" onclick="redirect()" >Admin Login</button>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+
+    <script>
+        function redirect() {
+            window.location.href="/admin";
+        }
+    </script>
+</body>
+</html>
